@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -50,8 +50,14 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "rust-analyzer",
+      "pylsp",
+      "typescript-language-server",
+      "clangd"
     },
+    capabilities = {
+      offsetEncoding = "utf-8"
+    }
   },
 
   -- Configure require("lazy").setup() options
